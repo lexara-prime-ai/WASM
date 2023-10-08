@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1.2px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+:root {
+    --dark: #242424;
+    --dark-2: #1f1f1f;
+    --light: #eaeaea;
+    --light-2: #d0d0d0;
+    --light-3: #3b3b3b;
+}
+
+body {
+    background: var(--dark);
+    color: var(--light);
+}
+
+.header {
+    background: var(--dark-2);
+    border-bottom: 1px solid var(--light-3);
+    padding: 1rem 7%;
+    box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    padding: 2rem;
+    max-width: 700px;
+    margin: auto;
+}
+
+.banner {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: .3s all ease;
+    cursor: pointer;
+}
+
+.banner:hover {
+    opacity: .7;
+}
+
+.highlighted-bg {
+    display: inline-block;
+    transform: rotate(-3deg);
+    background: var(--light);
+    color: var(--dark-2);
+    padding: .5rem;
+    border-radius: 9px;
+    box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.streamer {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    transition: .3s all ease;
+}
+
+.streamer:hover {
+    opacity: .8;
+    transform: translateY(-3px);
+}
+
+.streamer-info {
+    border-left: 3px solid var(--light);
+    padding-left: 2rem;
+}
+
+.stream-title {
+    font-size: 1rem;
+}
+
+.stream-description {
+    font-size: .9rem;
+}
